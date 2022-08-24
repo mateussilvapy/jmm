@@ -21,7 +21,7 @@ header img{
 }
 
 body{
-  background-image: url(./img/fundo.jpeg);
+  background-image: url(./img/fundo.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
