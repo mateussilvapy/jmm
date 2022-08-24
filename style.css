@@ -112,6 +112,7 @@ h3.texto {
   text-align: center;
   margin: auto;
   margin-bottom: 15px;
+  text-align: justify;
 }
 
 p.ficha {
