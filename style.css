@@ -107,6 +107,24 @@ footer h3{
   font-size: 1.6rem;
 }
 
+h3.texto {
+  width: 50%;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 15px;
+}
+
+p.ficha {
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+
+  margin-bottom: 1.2rem;
+
+  padding-left: 2rem;
+
+  color: black;
+}
+
 footer h2{
   text-align: center;
 }
