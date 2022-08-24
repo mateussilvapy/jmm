@@ -1,0 +1,279 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  font-size: 62.5%;
+}
+
+header{
+  background: radial-gradient(circle, rgba(52,62,98,1) 17%, rgba(40,41,59,1) 77%);
+
+  text-align: center;
+
+  height: 20rem;
+}
+
+header img{
+  height: 26rem;
+}
+
+body{
+  background-image: url(./img/fundo.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+  height: 100%;
+  width: 100%;
+
+  position: relative;
+  z-index: -1;
+
+  font-family: 'Ubuntu', sans-serif;
+}
+
+div.linha{
+  border: 1px solid rgb(68, 68, 68);
+
+  margin: 4rem 0 4rem;
+}
+
+main{
+  max-width: 60%;
+
+  margin: 4rem auto;
+
+  padding: 3rem;
+
+  background: rgba(181, 181, 196, 0.4);
+  box-shadow: 1px 1px 40px 5px rgba(63, 63, 65, 0.688);
+  backdrop-filter: blur(3px);
+  border-radius: 10px;
+
+  color: rgb(24, 24, 43);
+}
+
+main h2,
+footer div.containerContatos h2{
+  font-size: 3rem;
+
+  margin-bottom: 2rem;
+}
+
+main p,
+footer p{
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+
+  margin-bottom: 1.2rem;
+
+  padding-left: 2rem;
+
+  color: black;
+
+  cursor: pointer;
+}
+
+div.contatos{
+  display: flex;
+  justify-content: center;
+  gap: 7rem;
+
+  margin-top: 4rem;
+}
+
+footer{
+  background: radial-gradient(circle, rgba(52,62,98,1) 17%, rgba(40,41,59,1) 77%);
+}
+
+div.containerContatos{
+
+  margin: auto;
+
+  padding: 2rem;
+
+  color: white;
+}
+
+footer img{
+    width: 2rem;
+    margin-top: 1.3rem;
+}
+
+footer h3{
+  font-size: 1.6rem;
+}
+
+footer h2{
+  text-align: center;
+}
+div#email{
+  margin-top: 3rem;
+
+  text-align: center;
+}
+
+div#email h3{
+  margin: 3rem 0 1rem;
+
+  text-align: center;
+}
+
+footer p{
+  color: white
+}
+
+footer a{
+  text-decoration: none;
+}
+
+div.fotos{
+  display: grid;
+  justify-content: center;
+  align-items: stretch;
+  gap: 2rem;
+
+  grid-template-areas: 
+  "a b c d e"
+  "f g h i j";
+
+  background: rgba(181, 181, 196, 0.4);
+  box-shadow: 1px 1px 40px 5px rgba(63, 63, 65, 0.688);
+  backdrop-filter: blur(3px);
+  border-radius: 10px;
+
+  padding: 5rem;
+  margin: 10rem 2rem;
+}
+
+div.fotos img{
+  width: 23rem;
+
+  transition: .4s;
+}
+
+div.fotos img:hover{
+  transform: scale(1.1);
+}
+
+div img#img1{
+  grid-area: a;
+}
+
+div img#img2{
+  grid-area: b;
+}
+
+div img#img3{
+  grid-area: c;
+}
+
+div img#img4{
+  grid-area: d;
+}
+
+div img#img5{
+  grid-area: e;
+}
+
+div img#img6{
+  grid-area: f;
+}
+
+div img#img7{
+  grid-area: g;
+}
+
+div img#img8{
+  grid-area: h;
+}
+
+div img#img9{
+  grid-area: i;
+}
+
+div img#img10{
+  grid-area: j;
+}
+
+@media (max-width: 1300px){
+  div.fotos{  
+    grid-template-areas: 
+    "a b c" 
+    "d e f"
+    "g h i";
+  }
+
+  div img#img1{
+    grid-area: a;
+  }
+  
+  div img#img2{
+    grid-area: b;
+  }
+  
+  div img#img3{
+    grid-area: c;
+  }
+  
+  div img#img4{
+    grid-area: d;
+  }
+  
+  div img#img5{
+    grid-area: e;
+  }
+  
+  div img#img6{
+    grid-area: f;
+  }
+  
+  div img#img7{
+    grid-area: g;
+  }
+  
+  div img#img8{
+    grid-area: h;
+  }
+  
+  div img#img9{
+    grid-area: i;
+  }
+
+  div img#img10{
+    display: none;
+  }
+}
+
+@media (max-width: 820px){
+  div.fotos{  
+    grid-template-areas: 
+    "a b"
+    "c d" 
+    "e f"
+    "g h "
+    "i j";
+  }
+
+  div img#img10{
+    display: block;
+  }  
+  
+  main{
+    max-width: 90%;
+  }
+  
+}
+
+@media (max-width: 540px){
+  div.fotos{  
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+  }
+}
+
